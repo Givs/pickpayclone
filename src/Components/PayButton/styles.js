@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient'
 
 export const Label = styled.Text `
     font-size: 12px;
-    color: #fff;
+    color: ${({ focused }) => focused ? '#000' : '#fff'}
 `;
 
 export const Button = styled(LinearGradient)`
